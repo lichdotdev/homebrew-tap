@@ -11,10 +11,10 @@ cask "lich" do
   version "0.70.0"
   sha256 arm: "d4e52a7c8c24beffefbe3ca1a6df72df2f1ff6cc11a2c87f565458cc32a8a341", intel: "02ea63ccc46a465c4bd8cd4cbba3b6041aef60bdb38725de4ee4a867928c3103"
 
-  url "https://github.com/omartelo/lich/releases/download/v#{version}/lich-v#{version}-darwin-#{arch}.zip"
+  url "https://github.com/lichdotdev/lich/releases/download/v#{version}/lich-v#{version}-darwin-#{arch}.zip"
   name "lich"
   desc "Terminal-first ADE for the coding agents you already use"
-  homepage "https://github.com/omartelo/lich"
+  homepage "https://github.com/lichdotdev/lich"
 
   depends_on macos: ">= :ventura"
 
