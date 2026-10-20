@@ -1,4 +1,4 @@
-# Rendered by .github/workflows/release.yml (0.72.0 -> tag, checksums from the
+# Rendered by .github/workflows/release.yml (0.73.0 -> tag, checksums from the
 # release's checksums.txt) and pushed to the lichdotdev/homebrew-tap repository as
 # Casks/lich.rb — edit this template, never the tap copy.
 #
@@ -8,8 +8,8 @@
 cask "lich" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.72.0"
-  sha256 arm: "cccab7e04b696d5c28859f0a8cb680a084fb7ddfdfdf51b4f07b8cde67c121c7", intel: "1376651ad95c928c181c268a1ef6456fc8f03bf651848bf9e101bc351f295de4"
+  version "0.73.0"
+  sha256 arm: "9723e85923f113e6df6469bd9ae8493a774f76c4e54dad36308deefef2210fd3", intel: "bb4b72a5abbe4b28b6de4d2110751648412a7b037d69666771074161c5b6eed0"
 
   url "https://github.com/lichdotdev/lich/releases/download/v#{version}/lich-v#{version}-darwin-#{arch}.zip"
   name "lich"
@@ -28,13 +28,6 @@ cask "lich" do
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/Lich.app"]
   end
-
-  caveats <<~EOS
-    The app brings its own window on Apple Silicon and Intel. Should the
-    window fail to open, lich opens as a tab in your default browser instead
-    and keeps running after the tab is closed, so stop it from the terminal
-    or by signalling the process.
-  EOS
 
   zap trash: [
     "~/Library/Application Support/lich",
