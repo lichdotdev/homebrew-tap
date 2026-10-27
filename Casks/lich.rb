@@ -1,4 +1,4 @@
-# Rendered by .github/workflows/release.yml (0.79.0 -> tag, checksums from the
+# Rendered by .github/workflows/release.yml (0.80.0 -> tag, checksums from the
 # release's checksums.txt) and pushed to the lichdotdev/homebrew-tap repository as
 # Casks/lich.rb — edit this template, never the tap copy.
 #
@@ -8,12 +8,12 @@
 cask "lich" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.79.0"
-  sha256 arm: "cf5cf389b5cda3d3ed0d7b48468cf1cbde7dd50c46d62f28f6b02f02ad27933d", intel: "a7ec65429982ae94b7ee3b72410dbade43313aaf352f2a8825d24e789d7b5369"
+  version "0.80.0"
+  sha256 arm: "7ff5edab424971ee986b834fcac52bb2a2fa3d9809939ed1caa49fd7efb26f02", intel: "837569d6af83b077393c20c5cae214bd1db8dc9a8d280311f7e64d2ba8d936d8"
 
   url "https://github.com/lichdotdev/lich/releases/download/v#{version}/lich-v#{version}-darwin-#{arch}.zip"
   name "lich"
-  desc "Terminal-first ADE for the coding agents you already use"
+  desc "Run coding agents side by side, each on its own branch"
   homepage "https://github.com/lichdotdev/lich"
 
   depends_on macos: ">= :ventura"
