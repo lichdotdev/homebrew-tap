@@ -1,4 +1,4 @@
-# Rendered by .github/workflows/release.yml (0.93.1 -> tag, checksums from the
+# Rendered by .github/workflows/release.yml (0.94.0-rc.3 -> tag, checksums from the
 # release's checksums.txt) and pushed to the lichdotdev/homebrew-tap repository
 # twice: Casks/lich.rb, every release, and Casks/lich@beta.rb, every release and
 # pre-release, the cask the beta channel updates through. Edit this template,
@@ -10,8 +10,8 @@
 cask "lich@beta" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.93.1"
-  sha256 arm: "67c559417b79cc80583ae22267364e87b9755d7df4cbfa835116589c779560fa", intel: "d3872a225a688cdbc5d112ae5410dece2801f848df45bd8e983b17b736447824"
+  version "0.94.0-rc.3"
+  sha256 arm: "757897c25f627d266b02bd6a77d6a0e4c385f7f8c92905bb6182d92d6d232e33", intel: "90abb20eb7e706ad35dfce7618731d6b65b4d70ec8c88fdd58d8f588fb6245d0"
 
   url "https://github.com/lichdotdev/lich/releases/download/v#{version}/lich-v#{version}-darwin-#{arch}.zip"
   name "lich"
